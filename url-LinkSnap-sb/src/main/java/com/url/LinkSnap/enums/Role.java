@@ -1,4 +1,7 @@
 package com.url.LinkSnap.enums;
 
-public class Role {
+public enum Role {
+    Admin,
+    User
+
 }
