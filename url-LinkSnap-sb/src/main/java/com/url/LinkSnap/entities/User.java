@@ -1,10 +1,17 @@
-package com.url.LinkSnap.models;
+package com.url.LinkSnap.entities;
 
+import com.url.LinkSnap.enums.Role;
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
-@Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name="users")
 public class User {
     @Id
@@ -13,5 +20,6 @@ public class User {
     private String name;
     private String email;
     private String password;
-    private String role =  "role_user";
+    private Role role ;
+
 }
