@@ -1,4 +1,4 @@
-package com.url.LinkSnap.models;
+package com.url.LinkSnap.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
